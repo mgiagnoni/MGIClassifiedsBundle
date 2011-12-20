@@ -4,14 +4,22 @@ lyra_admin:
         listing:
             class: 'Acme\ClassifiedsBundle\Entity\Listing'
             controller: 'AcmeClassifiedsBundle:Admin'
+            # title displayed in top menu
             title: Listings
+            services:
+                # service id of user defined model manager
+                # see Acme/ClassifiedsBundle/Resources/config/services.yml
+                model_manager: acme_classifieds.listing_manager
             actions:
                 publish:
+                    # for batch actions it's the text displayed in drop down list
                     text: Publish
                 unpublish:
                     text: Unpublish
                 new:
+                    # for list/object actions it's the button text
                     text: 'New listing'
+                    # button icon
                     icon: circle-plus
                 expired:
                     route_pattern: expired
@@ -33,7 +41,7 @@ lyra_admin:
                 list_actions: [new,expired]
             filter:
                 # search dialog title
-                title: Search listings
+                title: 'Search listings' 
                 fields:
                     ad_title: ~
                     posted_at: ~
@@ -53,7 +61,7 @@ lyra_admin:
             class: 'Acme\ClassifiedsBundle\Entity\Category'
             title: Categories
             list:
-                title: Listing categories
+                title: 'Listing categories'
                 columns:
                     name: ~
                     description: ~
