@@ -14,7 +14,8 @@ bundle.
 Installation
 ============
 
-From your project root folder run::
+Install `LyraAdminBundle`_ (instructions are in bundle docs).
+To install AcmeClassifiedsBundle, from your project root folder run::
 
     git submodule add git://github.com/mgiagnoni/AcmeClassifiedsBundle.git src/Acme/ClassifiedsBundle
 
@@ -54,4 +55,20 @@ Update database schema
 
     app/console doctrine:schema:update
 
+Import admin configuration
+--------------------------
 
+A file containing all the configuration options for the backend area
+managed by LyraAdminBundle is included in the bundle and must be
+imported in your application configuration::
+
+    # app/config/config.yml
+
+    imports:
+        - { resource: '@AcmeClassifiedsBundle/Resources/config/lyra_admin.yml'}
+
+Go to backend area
+------------------
+
+::
+    http://.../app_dev.php/admin/listing/list

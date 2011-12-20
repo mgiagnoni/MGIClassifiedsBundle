@@ -1,0 +1,60 @@
+lyra_admin:
+    theme: ui-lightness
+    models:
+        listing:
+            class: 'Acme\ClassifiedsBundle\Entity\Listing'
+            controller: 'AcmeClassifiedsBundle:Admin'
+            title: Listings
+            actions:
+                publish:
+                    text: Publish
+                unpublish:
+                    text: Unpublish
+                new:
+                    text: 'New listing'
+                    icon: circle-plus
+                expired:
+                    route_pattern: expired
+                    text: 'Delete expired'
+                    icon: trash
+                    dialog:
+                        title: 'Confirm delete expired'
+                        message: 'Do you really want to delete all expired listings?'
+            list:
+                title: Listings
+                columns:
+                    ad_title: ~
+                    published:
+                        sortable: false
+                    posted_at:
+                        label: Date
+                        format: 'j/M/Y'
+                batch_actions: [publish,unpublish,delete]
+                list_actions: [new,expired]
+            filter:
+                # search dialog title
+                title: Search listings
+                fields:
+                    ad_title: ~
+                    posted_at: ~
+                    published: ~
+            form:
+                groups:
+                    listing:
+                        # panel title
+                        caption: Listing
+                        fields: [category,ad_title,ad_text]
+                        # column break after this panel
+                        break_after: true
+                    status:
+                        caption: Status
+                        fields: [published,expires_at]
+        category:
+            class: 'Acme\ClassifiedsBundle\Entity\Category'
+            title: Categories
+            list:
+                title: Listing categories
+                columns:
+                    name: ~
+                    description: ~
+
