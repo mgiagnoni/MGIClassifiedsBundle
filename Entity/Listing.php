@@ -12,6 +12,7 @@
 namespace Acme\ClassifiedsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Acme\ClassifiedsBundle\Entity\Listing
@@ -35,6 +36,7 @@ class Listing
      * @var string $ad_title
      *
      * @ORM\Column(name="ad_title", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $ad_title;
 
@@ -42,6 +44,7 @@ class Listing
      * @var text $ad_text
      *
      * @ORM\Column(name="ad_text", type="text")
+     * @Assert\NotBlank()
      */
     private $ad_text;
 
