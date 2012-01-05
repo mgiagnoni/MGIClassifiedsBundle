@@ -4,5 +4,3 @@ parameters:
 services:
     acme_classifieds.listing_manager:
         class: %acme_classifieds.listing_manager.class%
-        tags:
-            - {name: lyra_admin.model_manager}
