@@ -31,6 +31,9 @@ lyra_admin:
             list:
                 title: Listings
                 columns:
+                    category.name:
+                        label: Category
+                        sortable: false
                     ad_title: ~
                     published:
                         sortable: false
