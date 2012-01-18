@@ -25,4 +25,13 @@ class ListingManager extends BaseManager
 
         return true;
     }
+
+    public function getBaseListQueryBuilder()
+    {
+        $qb = parent::getBaseListQueryBuilder();
+        $qb->select('a');
+        $qb->leftJoin('a.category', 'category');
+
+        return $qb;
+    }
 }
