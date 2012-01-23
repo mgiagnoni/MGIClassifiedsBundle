@@ -46,6 +46,7 @@ lyra_admin:
                 # search dialog title
                 title: 'Search listings' 
                 fields:
+                    category: ~
                     ad_title: ~
                     posted_at: ~
                     published: ~
