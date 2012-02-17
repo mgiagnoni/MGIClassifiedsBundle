@@ -27,7 +27,7 @@ class AdminController extends BaseAdminController
         $renderer = $this->getDialogRenderer();
 
         return $this->container->get('templating')
-            ->renderResponse('LyraAdminBundle:Admin:dialog.html.twig', array(
+            ->renderResponse('LyraAdminBundle:Dialog:dialog.html.twig', array(
                 'renderer' => $renderer
         ));
     }
