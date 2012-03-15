@@ -28,6 +28,13 @@ lyra_admin:
                     dialog:
                         title: 'Confirm delete expired'
                         message: 'Do you really want to delete all expired listings?'
+            show:
+                title: Listing
+                fields:
+                    category: ~
+                    ad_title: ~
+                    posted_at: ~
+                    published: ~
             list:
                 title: Listings
                 columns:
