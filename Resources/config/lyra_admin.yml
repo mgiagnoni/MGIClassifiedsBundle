@@ -37,6 +37,9 @@ lyra_admin:
                     published: ~
             list:
                 title: Listings
+                default_sort:
+                    column: posted_at
+                    order: desc
                 columns:
                     category:
                         field: category.name
