@@ -58,8 +58,14 @@ lyra_admin:
                 fields:
                     category: ~
                     ad_title: ~
-                    posted_at: ~
+                    posted_at:
+                        widget: daterange
+                        options:
+                            child_widget: datetime_picker
                     published: ~
+            fields:
+                expires_at:
+                    widget: datetime_picker
             form:
                 groups:
                     listing:
