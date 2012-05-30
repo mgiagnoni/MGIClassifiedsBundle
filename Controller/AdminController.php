@@ -24,11 +24,12 @@ class AdminController extends BaseAdminController
             return $this->getRedirectToListResponse();
         }
 
-        $renderer = $this->getDialogRenderer();
+        $actions = $this->getActions();
 
         return $this->container->get('templating')
             ->renderResponse('LyraAdminBundle:Dialog:dialog.html.twig', array(
-                'renderer' => $renderer
+                'action' => $actions->get('expired'),
+                'cancel' => $actions->get('index')
         ));
     }
 
