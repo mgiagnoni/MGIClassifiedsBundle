@@ -23,5 +23,5 @@
     "autoload": {
         "psr-0": { "MGI\\ClassifiedsBundle": "" }
     },
-    "target-dir": "MGI/ClassifiedsBundle",
+    "target-dir": "MGI/ClassifiedsBundle"
 }
