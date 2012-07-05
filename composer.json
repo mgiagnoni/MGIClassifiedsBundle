@@ -1,0 +1,29 @@
+{
+    "name": "mgiagnoni/classifieds-bundle",
+    "type": "symfony-bundle",
+    "description": "Classifieds bundle for Symfony2 and Doctrine 2",
+    "keywords": ["symfony","bundle","classifieds"],
+    "homepage": "https://github.com/mgiagnoni/MGIClassifiedsBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Massimo Giagnoni",
+            "email": "gimassimo@gmail.com"
+        },
+        {
+            "name": "contributors",
+            "homepage": "https://github.com/mgiagnoni/MGIClassifiedsBundle/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/symfony": "2.1.*",
+        "doctrine/orm": "2.2.*",
+        "doctrine/doctrine-bundle": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "MGI\\ClassifiedsBundle": "" }
+    },
+    "target-dir": "MGI/ClassifiedsBundle",
+    "minimum-stability": "dev"
+}
