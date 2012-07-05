@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the AcmeClassifiedsBundle package.
+ * This file is part of the MGIClassifiedsBundle package.
  *
  * Copyright 2011 Massimo Giagnoni <gimassimo@gmail.com>
  *
@@ -9,16 +9,16 @@
  * information are in the LICENSE file distributed with this source code.
  */
 
-namespace Acme\ClassifiedsBundle\Entity;
+namespace MGI\ClassifiedsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Acme\ClassifiedsBundle\Entity\Listing
+ * MGI\ClassifiedsBundle\Entity\Listing
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="Acme\ClassifiedsBundle\Entity\ListingRepository")
+ * @ORM\Entity(repositoryClass="MGI\ClassifiedsBundle\Entity\ListingRepository")
  * @ORM\HasLifecycleCallbacks()
  */
 class Listing

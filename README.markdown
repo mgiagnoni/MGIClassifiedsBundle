@@ -1,4 +1,4 @@
-This repository contains the source code of the demo bundle (**AcmeClassifiedsBundle**)
+This repository contains the source code of the demo bundle (**MGIClassifiedsBundle**)
 built in the *Getting Started* tutorial of [LyraAdminBundle](https://github.com/mgiagnoni/LyraAdminBundle).
 
 Installation instructions at:

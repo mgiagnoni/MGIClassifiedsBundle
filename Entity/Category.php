@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the AcmeClassifiedsBundle package.
+ * This file is part of the MGIClassifiedsBundle package.
  *
  * Copyright 2011 Massimo Giagnoni <gimassimo@gmail.com>
  *
@@ -9,15 +9,15 @@
  * information are in the LICENSE file distributed with this source code.
  */
 
-namespace Acme\ClassifiedsBundle\Entity;
+namespace MGI\ClassifiedsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Acme\ClassifiedsBundle\Entity\Category
+ * MGI\ClassifiedsBundle\Entity\Category
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="Acme\ClassifiedsBundle\Entity\CategoryRepository")
+ * @ORM\Entity(repositoryClass="MGI\ClassifiedsBundle\Entity\CategoryRepository")
  */
 class Category
 {

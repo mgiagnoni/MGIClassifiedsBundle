@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the AcmeClassifiedsBundle package.
+ * This file is part of the MGIClassifiedsBundle package.
  *
  * Copyright 2011 Massimo Giagnoni <gimassimo@gmail.com>
  *
@@ -9,7 +9,7 @@
  * information are in the LICENSE file distributed with this source code.
  */
 
-namespace Acme\ClassifiedsBundle\DependencyInjection;
+namespace MGI\ClassifiedsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -27,7 +27,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('acme_classifieds');
+        $rootNode = $treeBuilder->root('mgi_classifieds');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

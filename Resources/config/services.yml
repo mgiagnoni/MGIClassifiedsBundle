@@ -1,6 +1,6 @@
 parameters:
-    acme_classifieds.listing_manager.class: Acme\ClassifiedsBundle\Model\ListingManager
+    mgi_classifieds.listing_manager.class: MGI\ClassifiedsBundle\Model\ListingManager
 
 services:
-    acme_classifieds.listing_manager:
-        class: %acme_classifieds.listing_manager.class%
+    mgi_classifieds.listing_manager:
+        class: %mgi_classifieds.listing_manager.class%

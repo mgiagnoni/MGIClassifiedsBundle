@@ -1,3 +1,3 @@
-AcmeClassifiedsBundle_homepage:
+MGIClassifiedsBundle_homepage:
     pattern:  /hello/{name}
-    defaults: { _controller: AcmeClassifiedsBundle:Default:index }
+    defaults: { _controller: MGIClassifiedsBundle:Default:index }

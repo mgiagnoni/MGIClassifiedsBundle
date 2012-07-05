@@ -1,7 +1,7 @@
-About AcmeClassifiedsBundle
+About MGIClassifiedsBundle
 ===========================
 
-AcmeClassifiedsBundle allows to manage a simple classified advertising
+MGIClassifiedsBundle allows to manage a simple classified advertising
 board. It's a demo bundle built to give a practical example of the
 features of `LyraAdminBundle`_.
 This is a work in progress. While the *Getting Started* tutorial and other
@@ -15,15 +15,15 @@ Installation
 ============
 
 Install `LyraAdminBundle`_ (instructions are in bundle docs).
-To install AcmeClassifiedsBundle, from your project root folder run::
+To install MGIClassifiedsBundle, from your project root folder run::
 
-    git submodule add git://github.com/mgiagnoni/AcmeClassifiedsBundle.git src/Acme/ClassifiedsBundle
+    git submodule add git://github.com/mgiagnoni/MGIClassifiedsBundle.git src/MGI/ClassifiedsBundle
 
 To install the bundle as git submodule your whole project must be under version
 control with git or the command ``git submodule add`` will return an error. In
 this case, you can simply clone the repository::
 
-    git clone git://github.com/mgiagnoni/AcmeClassifiedsBundle.git src/Acme/ClassifiedsBundle
+    git clone git://github.com/mgiagnoni/MGIClassifiedsBundle.git src/MGI/ClassifiedsBundle
 
 Add bundle to application kernel
 --------------------------------
@@ -36,7 +36,7 @@ Add bundle to application kernel
     {
         $bundles = array(
             // other bundles
-            new Acme\ClassifiedsBundle\AcmeClassifiedsBundle(),
+            new MGI\ClassifiedsBundle\MGIClassifiedsBundle(),
         );
 
     // ...
@@ -65,10 +65,11 @@ imported in your application configuration::
     # app/config/config.yml
 
     imports:
-        - { resource: '@AcmeClassifiedsBundle/Resources/config/lyra_admin.yml'}
+        - { resource: '@MGIClassifiedsBundle/Resources/config/lyra_admin.yml'}
 
 Go to backend area
 ------------------
 
 ::
+
     http://.../app_dev.php/admin/listing/list

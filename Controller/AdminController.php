@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the AcmeClassifiedsBundle package.
+ * This file is part of the MGIClassifiedsBundle package.
  *
  * Copyright 2011 Massimo Giagnoni <gimassimo@gmail.com>
  *
@@ -9,7 +9,8 @@
  * information are in the LICENSE file distributed with this source code.
  */
 
-namespace Acme\ClassifiedsBundle\Controller;
+namespace MGI\ClassifiedsBundle\Controller;
+
 use Lyra\AdminBundle\Controller\AdminController as BaseAdminController;
 
 class AdminController extends BaseAdminController
@@ -18,7 +19,7 @@ class AdminController extends BaseAdminController
     {
         if ('POST' === $this->getRequest()->getMethod()) {
             if ($this->getModelManager()->deleteExpiredListings()) {
-                $this->setFlash('acme_classifieds success', 'Expired ads have been successfully deleted');
+                $this->setFlash('mgi_classifieds success', 'Expired ads have been successfully deleted');
             }
 
             return $this->getRedirectToListResponse();

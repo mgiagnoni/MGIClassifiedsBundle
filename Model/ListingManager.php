@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the AcmeClassifiedsBundle package.
+ * This file is part of the MGIClassifiedsBundle package.
  *
  * Copyright 2011 Massimo Giagnoni <gimassimo@gmail.com>
  *
@@ -9,7 +9,7 @@
  * information are in the LICENSE file distributed with this source code.
  */
 
-namespace Acme\ClassifiedsBundle\Model;
+namespace MGI\ClassifiedsBundle\Model;
 
 use Lyra\AdminBundle\Model\ORM\ModelManager as BaseManager;
 

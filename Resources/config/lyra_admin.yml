@@ -2,14 +2,14 @@ lyra_admin:
     theme: ui-lightness
     models:
         listing:
-            class: 'Acme\ClassifiedsBundle\Entity\Listing'
-            controller: 'AcmeClassifiedsBundle:Admin'
+            class: 'MGI\ClassifiedsBundle\Entity\Listing'
+            controller: 'MGIClassifiedsBundle:Admin'
             # title displayed in top menu
             title: Listings
             services:
                 # service id of user defined model manager
-                # see Acme/ClassifiedsBundle/Resources/config/services.yml
-                model_manager: acme_classifieds.listing_manager
+                # see MGI/ClassifiedsBundle/Resources/config/services.yml
+                model_manager: mgi_classifieds.listing_manager
             actions:
                 publish:
                     # for batch actions it's the text displayed in drop down list
@@ -78,7 +78,7 @@ lyra_admin:
                         caption: Status
                         fields: [published,expires_at]
         category:
-            class: 'Acme\ClassifiedsBundle\Entity\Category'
+            class: 'MGI\ClassifiedsBundle\Entity\Category'
             title: Categories
             list:
                 title: 'Listing categories'
