@@ -13,6 +13,7 @@ namespace MGI\ClassifiedsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * MGI\ClassifiedsBundle\Entity\Listing
@@ -73,6 +74,17 @@ class Listing
      * @ORM\ManyToOne(targetEntity="Category", fetch="EAGER")
      */
     private $category;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Tag")
+     * @ORM\JoinTable(name="listing_tags")
+     */
+    private $tags;
+
+    public function __construct()
+    {
+        $this->tags = new ArrayCollection();
+    }
 
     public function setCategory(Category $category)
     {
@@ -195,7 +207,27 @@ class Listing
     }
 
     /**
-     * @ORM\prePersist
+     * Set tags
+     *
+     * @param \Doctrine\Common\Collections\ArrayCollection $tags
+     */
+    public function setTags(ArrayCollection $tags)
+    {
+        $this->tags = $tags;
+    }
+
+    /**
+     * Get tags
+     *
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getTags()
+    {
+        return $this->tags;
+    }
+
+    /**
+     * @ORM\PrePersist
      */
     public function createPostedAtValue()
     {
