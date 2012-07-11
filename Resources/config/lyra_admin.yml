@@ -71,7 +71,7 @@ lyra_admin:
                     listing:
                         # panel title
                         caption: Listing
-                        fields: [category,ad_title,ad_text]
+                        fields: [category,tags,ad_title,ad_text]
                         # column break after this panel
                         break_after: true
                     status:
@@ -85,4 +85,11 @@ lyra_admin:
                 columns:
                     name: ~
                     description: ~
-
+        tag:
+            class: 'MGI\ClassifiedsBundle\Entity\Tag'
+            title: Tags
+            list:
+                title: Listing tags
+                columns:
+                    name: ~
+                    description: ~
