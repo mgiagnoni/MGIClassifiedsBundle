@@ -66,6 +66,9 @@ lyra_admin:
             fields:
                 expires_at:
                     widget: datetime_picker
+                tags:
+                    options:
+                        attr: { class: dual-list }
             form:
                 groups:
                     listing:
