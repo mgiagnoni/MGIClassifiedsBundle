@@ -60,6 +60,7 @@ class Listing
      * @var datetime $expires_at
      *
      * @ORM\Column(name="expires_at", type="datetime")
+     * @Assert\NotBlank()
      */
     private $expires_at;
 
